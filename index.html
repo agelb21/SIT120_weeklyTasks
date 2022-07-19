@@ -9,6 +9,8 @@
     }    
   </script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.4/dist/vue.js"></script>
+
   
 <title>Home</title>
 </head>
@@ -34,6 +36,18 @@
         <div><img src="frog6.jpg" alt="frog photo" width="100%" ></div>  
         <div><img src="frog7.jpg" alt="frog photo" width="100%" ></div>    
     </div>
+    <div id="app">
+      <!-- check the data-->
+      <div
+      v-for="todo in todos"
+      :key="todo.title"
+      :style="{ textDecoration: todo.checked? 'line-through' : 'none'}"
+      >
+      <input type="checkbox" v-model="todo.checked"/>
+      {{ todo.title}}
+      </div>
+
+    </div>
 
 </div>
       
@@ -44,3 +58,4 @@
 </body>
 
 </html>
+<script src="./todo.js"></script>
