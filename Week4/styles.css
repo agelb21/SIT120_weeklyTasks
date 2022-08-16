@@ -1,0 +1,9 @@
+  .flex-container {
+    display: flex;
+  }
+
+  .flex-container > h3, p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+  }
