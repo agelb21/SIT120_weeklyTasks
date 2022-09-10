@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week6</title>
+        <link href="styles.css" type="text/css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <!-- Task 1 -->
+        <div id="app">
+            <input v-model="username" placeholder="username" />
+            <p>Username: {{ username }}</p>                       
+            
+            <input type="email" placeholder="email" v-model="email" />
+            <p>Email: {{email}}</p>           
+
+        </div>   
+        <!-- Task 2 -->
+        <div id="app1">
+            <p>What Pizza Toppings would you like to add? </p>
+            <input type="checkbox" id="olives" value="olives" v-model="checkedToppings">
+            <label for="olives">Olives</label>
+            <input type="checkbox" id="cheese" value="cheese" v-model="checkedToppings">
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" id="chili" value="chili flakes" v-model="checkedToppings">
+            <label for="chili">Chili Flakes</label>
+
+            <br>
+            <span>Extra Toppings: {{ checkedToppings }}</span>
+        </div>
+        <br>
+        <!-- Task 3 -->        
+        <div id="app2">
+            <span>Choose a task: </span>
+            
+            <select name="tasks" id="tasks" v-model="task">                
+                <option disabled value="">Please select one</option>
+                <option v-for="task in tasks" :value="task.name"> {{task.name}} </option>
+                </select>
+              <br>
+              <p>Task: {{ task }}</p>
+
+        </div>
+             
+    </body>
+    <script>
+        // Task 1
+        let app = new Vue({
+            el: '#app',
+            data: {             
+                username: '',
+                email: '',                
+            },
+        });
+
+        // Task 2
+        let app1 = new Vue({
+            el: '#app1',
+            data: {
+            checkedToppings: [],
+            }
+        });
+
+        // Task 3
+
+        let app2 = new Vue({
+            el: '#app2' ,
+            data: {
+                task:'',
+                tasks: [
+                    {
+                        name: 'Laundry',
+                        level: 'easy',
+                        id: 1,
+                    },
+                    {
+                        name: 'Change Bedding',
+                        level: 'medium',
+                        id: 2,
+                    },
+                    {
+                        name: 'Wash Dishes',
+                        level: 'medium',
+                        id: 3,
+                    },
+
+                ] 
+
+            }
+        });
+    </script>
+</html>
