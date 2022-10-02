@@ -1,0 +1,195 @@
+/* Web app*/
+body{
+    background-color:#9FFFC5;
+}
+#app{    
+    
+    font-family: Arial, Helvetica, sans-serif;   
+
+}
+/* row layouts*/
+.row{
+    display: flex;
+    flex-wrap: wrap; 
+   
+}
+
+/* Main Nav bar/ sides*/
+.sides{
+    background-color:#9FFFC5;
+    width: 15%;
+    float:left;   
+}
+
+a{
+    margin: 2%;
+    padding: 5%;
+    background-color: #9bddb4;
+    border-radius: 10px;
+}
+.router-link-exact-active{    
+    margin: 10%;
+    padding: 5%;
+    background-color:  #9FA9FF;
+}
+
+
+
+/* Content*/
+.content{
+    background-color:#9FFFF5;
+    width:70%;
+    height: 100vh;
+    float:left;   
+}
+
+/* New task form*/
+.newtasksection{
+    background-color: #9FA9FF;
+    border-radius: 15px 100px 30px 5px;
+    margin: 1%;
+    
+}
+
+.newtasksection > input{
+    width: 50%;
+    padding: 1% 5% 1% 5%;
+    margin: 1%;
+    border-radius: 100px;
+    font-weight: bolder;    
+}
+
+.newtasksection > button{
+    margin: 1%;
+    padding: 2px 2%;
+    border-radius: 3px;
+}
+.newtasksection > button:hover{
+    cursor: pointer;
+    background-color: #b8bcdd;
+}
+
+.taskdetails{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.taskdetails > div{
+    padding: 1%;
+    align-self: flex-end;
+}
+
+.taskdetails > div > textarea{
+    margin: 1%;
+    border-radius: 3px;
+}
+.taskdetails > div > select{
+    margin: 5%;
+    border-radius: 3px; 
+}
+
+
+/* List Select Btns*/
+.listselectbtns{
+    margin: 1%;
+}
+.listselectbtns > button{
+    width: 50%;
+    border-radius: 10px 70px 10px 10px;
+    padding: 1% 5% 1% 5%;
+    font-weight: bolder;    
+}
+
+
+.todopg{
+    background-color: #e6daf8;    
+}
+.todopg:hover{
+    background-color: rgb(195, 155, 255);
+}
+.completedpg{
+    background-color: #9FD9FF;
+}
+.completedpg:hover{
+    background-color: #74b7e4;
+}
+/* intro page style*/
+.todolistpg1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;  
+}
+.todolistpg1 > div{
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
+    padding:1%;
+}
+.todolistpg1 > span{
+    width: 100%;
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 1%;
+}
+
+
+/* todo list style*/
+.todolistpg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.todolistpg > div{
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.taskq1{
+    background-color: #cadbe6;    
+}
+.taskq2{
+    background-color: #85929b;
+}
+.taskq3{
+    background-color: #85929b;
+}
+.taskq4{
+    background-color: #cadbe6;    
+}
+
+/* completed list style*/
+.complistpg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.complistpg > div{
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
+    padding: 1%;
+}
+.complistpg > h2{
+    width: 100%;
+}
+
+/* todo list item style*/
+.taskitemcss{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #afb6f8e7;
+}
+
+.taskrow{
+    width: 100%;
+    text-align: left;
+    background-color: #9FA9FF;
+    padding: 1%;
+    margin:1%;           
+}
+.taskrowright{
+    width: 100%;
+    text-align: right;
+    margin:1%;
+}
